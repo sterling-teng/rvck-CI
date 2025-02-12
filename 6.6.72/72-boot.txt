@@ -1,0 +1,397 @@
+[    0.000000] Linux version 6.6.72-00200-gd5d5c0772396 (yt@yt) (riscv64-linux-gcc (GCC) 14.2.0, GNU ld (GNU Binutils) 2.42) #12 SMP PREEMPT Thu Feb 13 01:53:58 CST 2025
+[    0.000000] random: crng init done
+[    0.000000] Machine model: Sipeed Lichee Pi 4A
+[    0.000000] SBI specification v2.0 detected
+[    0.000000] SBI implementation ID=0x1 Version=0x10004
+[    0.000000] SBI TIME extension detected
+[    0.000000] SBI IPI extension detected
+[    0.000000] SBI RFENCE extension detected
+[    0.000000] earlycon: uart0 at MMIO32 0x000000ffe7014000 (options '115200n8')
+[    0.000000] printk: bootconsole [uart0] enabled
+[    0.000000] efi: UEFI not found.
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000c8000000, size 768 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] OF: reserved mem: 0x00000000c8000000..0x00000000f7ffffff (786432 KiB) map reusable linux,cma
+[    0.000000] OF: reserved mem: 0x0000000000000000..0x000000000003ffff (256 KiB) nomap non-reusable mmode_resv1@0
+[    0.000000] OF: reserved mem: 0x0000000000040000..0x000000000005ffff (128 KiB) nomap non-reusable mmode_resv0@40000
+[    0.000000] OF: reserved mem: 0x0000000010000000..0x00000000166fffff (105472 KiB) map non-reusable framebuffer@10000000
+[    0.000000] OF: reserved mem: 0x000000001e000000..0x000000001e00ffff (64 KiB) map non-reusable memory@1E000000
+[    0.000000] OF: reserved mem: 0x0000000020000000..0x000000002027ffff (2560 KiB) map non-reusable memory@20000000
+[    0.000000] OF: reserved mem: 0x0000000020400000..0x000000002067ffff (2560 KiB) map non-reusable memory@20400000
+[    0.000000] OF: reserved mem: 0x0000000032000000..0x0000000032dfffff (14336 KiB) map non-reusable memory@32000000
+[    0.000000] OF: reserved mem: 0x0000000032e00000..0x00000000333fffff (6144 KiB) map non-reusable memory@32E00000
+[    0.000000] OF: reserved mem: 0x0000000033400000..0x00000000335fffff (2048 KiB) map non-reusable memory@33400000
+[    0.000000] OF: reserved mem: 0x0000000033600000..0x00000000337fffff (2048 KiB) map non-reusable memory@33600000
+[    0.000000] OF: reserved mem: 0x0000000038400000..0x00000000397fffff (20480 KiB) nomap non-reusable memory@38400000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000000200000-0x00000000ffffffff]
+[    0.000000]   Normal   [mem 0x0000000100000000-0x00000001ffffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000200000-0x00000000383fffff]
+[    0.000000]   node   0: [mem 0x0000000038400000-0x00000000397fffff]
+[    0.000000]   node   0: [mem 0x0000000039800000-0x00000001ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000200000-0x00000001ffffffff]
+[    0.000000] SBI HSM extension detected
+[    0.000000] Falling back to deprecated "riscv,isa"
+[    0.000000] riscv: base ISA extensions acdfim
+[    0.000000] riscv: ELF capabilities acdfim
+[    0.000000] percpu: Embedded 29 pages/cpu s78568 r8192 d32024 u118784
+[    0.000000] pcpu-alloc: s78568 r8192 d32024 u118784 alloc=29*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Kernel command line: root=/dev/mmcblk0p4 console=ttyS0,115200 rootwait rw earlycon clk_ignore_unused loglevel=7 eth= rootrwoptions=rw,noatime rootrwreset=yes selinux=0
+[    0.000000] Unknown kernel command line parameters "eth= rootrwoptions=rw,noatime rootrwreset=yes selinux=0", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 2067975
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] software IO TLB: area num 4.
+[    0.000000] software IO TLB: mapped [mem 0x00000000fbfff000-0x00000000fffff000] (64MB)
+[    0.000000] Memory: 7226884K/8386560K available (12610K kernel code, 2266K rwdata, 4336K rodata, 555K init, 459K bss, 373244K reserved, 786432K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=4.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] riscv-intc: 64 local interrupts mapped
+[    0.000000] plic: interrupt-controller@ffd8000000: mapped 240 interrupts with 4 handlers for 8 contexts.
+[    0.000000] riscv: providing IPIs using SBI IPI extension
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x1623fa770, max_idle_ns: 881590404476 ns
+[    0.000001] sched_clock: 64 bits at 3000kHz, resolution 333ns, wraps every 4398046511097ns
+[    0.009441] Console: colour dummy device 80x25
+[    0.014079] Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=12000)
+[    0.024384] pid_max: default: 32768 minimum: 301
+[    0.029305] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.037043] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.047798] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.056802] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.066325] riscv: ELF compat mode unsupported
+[    0.066350] ASID allocator using 16 bits (65536 entries)
+[    0.076492] rcu: Hierarchical SRCU implementation.
+[    0.081365] rcu: 	Max phase no-delay instances is 1000.
+[    0.087678] EFI services will not be available.
+[    0.092799] smp: Bringing up secondary CPUs ...
+[    0.121511] cpu1: Ratio of byte access time to unaligned word access is 6.14, unaligned accesses are fast
+[    0.153637] cpu2: Ratio of byte access time to unaligned word access is 6.14, unaligned accesses are fast
+[    0.185756] cpu3: Ratio of byte access time to unaligned word access is 6.14, unaligned accesses are fast
+[    0.195741] smp: Brought up 1 node, 4 CPUs
+[    0.202014] devtmpfs: initialized
+[    0.231269] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.241211] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.266029] pinctrl core: initialized pinctrl subsystem
+[    0.272616] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.279957] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+[    0.287526] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.296539] thermal_sys: Registered thermal governor 'step_wise'
+[    0.296554] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.302727] cpuidle: using governor menu
+[    0.337480] cpu0: Ratio of byte access time to unaligned word access is 6.14, unaligned accesses are fast
+[    0.358736] /soc: Fixed dependency cycle(s) with /soc/interrupt-controller@ffd8000000
+[    0.367485] /soc/dw-hdmi-tx@ffef540000: Fixed dependency cycle(s) with /soc/dc8200@ffef600000
+[    0.376226] /soc/dc8200@ffef600000: Fixed dependency cycle(s) with /soc/dw-hdmi-tx@ffef540000
+[    0.385398] /soc/vha@fffc800000: Fixed dependency cycle(s) with /soc/vha@fffc800000
+[    0.404627] /soc/dw-hdmi-tx@ffef540000: Fixed dependency cycle(s) with /soc/dc8200@ffef600000
+[    0.413687] /soc/dw-hdmi-tx@ffef540000: Fixed dependency cycle(s) with /soc/dc8200@ffef600000
+[    0.422513] /soc/dc8200@ffef600000: Fixed dependency cycle(s) with /soc/dw-hdmi-tx@ffef540000
+[    0.447314] /soc/vha@fffc800000: Fixed dependency cycle(s) with /soc/vha@fffc800000
+[    0.465423] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.472322] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.478681] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.485552] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.493209] ACPI: Interpreter disabled.
+[    0.497931] iommu: Default domain type: Translated
+[    0.502845] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.509558] SCSI subsystem initialized
+[    0.513713] usbcore: registered new interface driver usbfs
+[    0.519332] usbcore: registered new interface driver hub
+[    0.524825] usbcore: registered new device driver usb
+[    0.530831] mc: Linux media interface: v0.10
+[    0.535283] videodev: Linux video capture interface: v2.00
+[    0.541838] Advanced Linux Sound Architecture Driver Initialized.
+[    0.549113] Bluetooth: Core ver 2.22
+[    0.552855] NET: Registered PF_BLUETOOTH protocol family
+[    0.558256] Bluetooth: HCI device and connection manager initialized
+[    0.564720] Bluetooth: HCI socket layer initialized
+[    0.569727] Bluetooth: L2CAP socket layer initialized
+[    0.574874] Bluetooth: SCO socket layer initialized
+[    0.580488] vgaarb: loaded
+[    0.583939] clocksource: Switched to clocksource riscv_clocksource
+[    0.591204] pnp: PnP ACPI: disabled
+[    0.608262] NET: Registered PF_INET protocol family
+[    0.613587] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.633586] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.642388] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.650214] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.658731] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    0.668989] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.675742] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.682711] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.690259] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.697047] RPC: Registered named UNIX socket transport module.
+[    0.703102] RPC: Registered udp transport module.
+[    0.707859] RPC: Registered tcp transport module.
+[    0.712604] RPC: Registered tcp-with-tls transport module.
+[    0.718184] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.726540] PCI: CLS 0 bytes, default 64
+[    0.730748] kvm [1]: hypervisor extension not available
+[    0.737824] Initialise system trusted keyrings
+[    0.742829] workingset: timestamp_bits=62 max_order=21 bucket_order=0
+[    0.750444] NFS: Registering the id_resolver key type
+[    0.755609] Key type id_resolver registered
+[    0.759885] Key type id_legacy registered
+[    0.764009] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.770751] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.778330] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.784978] fuse: init (API version 7.39)
+[    0.789421] 9p: Installing v9fs 9p2000 file system support
+[    0.848186] jitterentropy: Initialization failed with host not compliant with requirements: 9
+[    0.856845] NET: Registered PF_ALG protocol family
+[    0.861719] Key type asymmetric registered
+[    0.865885] Asymmetric key parser 'x509' registered
+[    0.870916] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    0.878470] io scheduler mq-deadline registered
+[    0.883061] io scheduler kyber registered
+[    0.887167] io scheduler bfq registered
+[    0.912620] th1520_clocks_probe !!! start !
+[    0.935180] th1520-fm-clk ffef010000.clock-controller: succeed to register th1520 fullmask clock driver
+[    0.954352] visys-clk-gate-provider soc:visys-clk-gate: succeed to register visys gate clock provider
+[    0.968403] vpsys-clk-gate-provider ffecc30000.vpsys-clk-gate: succeed to register vpsys gate clock provider
+[    0.988195] vosys-clk-gate-provider ffef528000.vosys-clk-gate: succeed to register vosys gate clock provider
+[    0.999280] dspsys-clk-gate-provider soc:dspsys-clk-gate: cannot find regmap for tee dsp system register
+[    1.014783] dspsys-clk-gate-provider soc:dspsys-clk-gate: succeed to register dspsys gate clock provider
+[    1.025199] th1520_audiosys_clk_probe audiosys_regmap=0xffffffd9005bf000
+[    1.040130] audiosys-clk-gate-provider soc:audiosys-clk-gate: succeed to register audiosys gate clock provider
+[    1.058263] miscsys-clk-gate-provider soc:miscsys-clk-gate: succeed to register miscsys gate clock provider
+[    1.069562] dw_axi_dmac_platform ffefc00000.dma-controller: DesignWare AXI DMA Controller, 4 channels
+[    1.081303] dw_axi_dmac_platform ffc8000000.dma-controller: DesignWare AXI DMA Controller, 16 channels
+[    1.220395] Serial: 8250/16550 driver, 6 ports, IRQ sharing disabled
+[    1.233238] SuperH (H)SCI(F) driver initialized
+[    1.249430] vs-dc ffef600000.dc8200: dpu0pll_on:0 dpu1pll_on:1
+[    1.272471] loop: module loaded
+[    1.323245] usbcore: registered new interface driver usb-storage
+[    1.329434] usbcore: registered new interface driver ums-sddr09
+[    1.335495] usbcore: registered new interface driver ums-sddr55
+[    1.342051] mousedev: PS/2 mouse device common for all mice
+[    1.349312] i2c_dev: i2c /dev entries driver
+[    1.354964] dw_wdt ffefc30000.watchdog: No valid TOPs array specified
+[    1.362606] dw_wdt ffefc31000.watchdog: No valid TOPs array specified
+[    1.371169] Watchdog module: th1520-wdt loaded
+[    1.376267] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+[    1.384893] Bluetooth: HCI UART driver ver 2.3
+[    1.389414] Bluetooth: HCI UART protocol H4 registered
+[    1.396181] sdhci: Secure Digital Host Controller Interface driver
+[    1.402481] sdhci: Copyright(c) Pierre Ossman
+[    1.407874] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.416253] usbcore: registered new interface driver usbhid
+[    1.422000] usbhid: USB HID core driver
+[    1.428194] xuantie,th1520-mbox-client mbox_910t_client2: Successfully registered
+[    1.436595] riscv-pmu-sbi: SBI PMU extension is available
+[    1.440685] mmc0: SDHCI controller on ffe7080000.mmc [ffe7080000.mmc] using ADMA 64-bit
+[    1.442370] riscv-pmu-sbi: 16 firmware and 18 hardware counters
+[    1.464469] NET: Registered PF_INET6 protocol family
+[    1.471141] Segment Routing with IPv6
+[    1.475028] In-situ OAM (IOAM) with IPv6
+[    1.479152] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.486325] NET: Registered PF_PACKET protocol family
+[    1.492062] Bluetooth: RFCOMM TTY layer initialized
+[    1.497069] Bluetooth: RFCOMM socket layer initialized
+[    1.502300] Bluetooth: RFCOMM ver 1.11
+[    1.506327] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    1.511900] Bluetooth: BNEP socket layer initialized
+[    1.516998] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.523035] Bluetooth: HIDP socket layer initialized
+[    1.528231] lib80211: common routines for IEEE802.11 drivers
+[    1.534032] lib80211_crypt: registered algorithm 'NULL'
+[    1.534062] lib80211_crypt: registered algorithm 'WEP'
+[    1.534075] lib80211_crypt: registered algorithm 'CCMP'
+[    1.534085] lib80211_crypt: registered algorithm 'TKIP'
+[    1.534164] 9pnet: Installing 9P2000 support
+[    1.536058] mmc2: SDHCI controller on ffe70a0000.mmc [ffe70a0000.mmc] using ADMA 64-bit
+[    1.538710] Key type dns_resolver registered
+[    1.552478] mmc0: new HS400 MMC card at address 0001
+[    1.555568] sdhci-dwcmshc ffe70a0000.mmc: card claims to support voltages below defined range
+[    1.566870] mmcblk0: mmc0:0001 Y2P032 29.1 GiB
+[    1.576504] registered taskstats version 1
+[    1.581923] Loading compiled-in X.509 certificates
+[    1.583674]  mmcblk0: p1 p2 p3 p4
+[    1.589128] mmc2: new high speed SDIO card at address 0001
+[    1.597862] mmcblk0boot0: mmc0:0001 Y2P032 4.00 MiB
+[    1.605340] mmcblk0boot1: mmc0:0001 Y2P032 4.00 MiB
+[    1.612525] mmcblk0rpmb: mmc0:0001 Y2P032 16.0 MiB, chardev (244:0)
+[    1.668140] es7210 work-mode not defined.using ES7210_NORMAL_I2S by default
+[    1.675244] es7210 channels-max not defined.using MIC_CHN_2 by default
+[    1.695310] printk: console [ttyS0] disabled
+[    1.700469] ffe7014000.serial: ttyS0 at MMIO 0xffe7014000 (irq = 30, base_baud = 6250000) is a 16550A
+[    1.709921] printk: console [ttyS0] enabled
+[    1.718525] printk: bootconsole [uart0] disabled
+[    1.742982] fff7f08000.serial: ttyS4 at MMIO 0xfff7f08000 (irq = 31, base_baud = 6250000) is a 16550A
+[    1.754281] vs-drm display-subsystem: bound ffef600000.dc8200 (ops 0xffffffff80dba5d8)
+[    1.762588] dwhdmi-th1520 ffef540000.dw-hdmi-tx: Detected HDMI TX controller v2.14a with HDCP (DWC HDMI 2.0 TX PHY)
+[    1.774419] dwhdmi-th1520 ffef540000.dw-hdmi-tx: registered DesignWare HDMI I2C bus driver
+[    1.783312] vs-drm display-subsystem: bound ffef540000.dw-hdmi-tx (ops 0xffffffff80dbbdd8)
+[    1.793276] [drm] Initialized vs-drm 1.0.0 20191101 for display-subsystem on minor 0
+[    1.997222] Console: switching to colour frame buffer device 240x67
+[    2.035792] vs-drm display-subsystem: [drm] fb0: vs-drmdrmfb frame buffer device
+[    2.044793] spi_norflash@0 enforce active low on GPIO handle
+[    2.052314] spi-nor spi0.0: unrecognized JEDEC id bytes: ff ff ff ff ff ff
+[    2.060858] spidev@0 enforce active low on GPIO handle
+[    2.068616] th1520-dwmac ffe7070000.ethernet: IRQ eth_wake_irq not found
+[    2.075471] th1520-dwmac ffe7070000.ethernet: IRQ eth_lpi not found
+[    2.082092] th1520-dwmac ffe7070000.ethernet: PTP uses main clock
+[    2.089209] th1520-dwmac ffe7070000.ethernet: User ID: 0x10, Synopsys ID: 0x37
+[    2.096555] th1520-dwmac ffe7070000.ethernet: 	DWMAC1000
+[    2.101965] th1520-dwmac ffe7070000.ethernet: DMA HW capability register supported
+[    2.109631] th1520-dwmac ffe7070000.ethernet: RX Checksum Offload Engine supported
+[    2.117270] th1520-dwmac ffe7070000.ethernet: COE Type 2
+[    2.122663] th1520-dwmac ffe7070000.ethernet: TX Checksum insertion supported
+[    2.129869] th1520-dwmac ffe7070000.ethernet: Enhanced/Alternate descriptors
+[    2.136992] th1520-dwmac ffe7070000.ethernet: Enabled extended descriptors
+[    2.144076] th1520-dwmac ffe7070000.ethernet: Ring mode enabled
+[    2.150150] th1520-dwmac ffe7070000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+[    2.173266] th1520-dwmac ffe7060000.ethernet: IRQ eth_wake_irq not found
+[    2.180106] th1520-dwmac ffe7060000.ethernet: IRQ eth_lpi not found
+[    2.186682] th1520-dwmac ffe7060000.ethernet: PTP uses main clock
+[    2.193563] th1520-dwmac ffe7060000.ethernet: User ID: 0x10, Synopsys ID: 0x37
+[    2.200901] th1520-dwmac ffe7060000.ethernet: 	DWMAC1000
+[    2.206365] th1520-dwmac ffe7060000.ethernet: DMA HW capability register supported
+[    2.214099] th1520-dwmac ffe7060000.ethernet: RX Checksum Offload Engine supported
+[    2.221764] th1520-dwmac ffe7060000.ethernet: COE Type 2
+[    2.227149] th1520-dwmac ffe7060000.ethernet: TX Checksum insertion supported
+[    2.234352] th1520-dwmac ffe7060000.ethernet: Enhanced/Alternate descriptors
+[    2.241473] th1520-dwmac ffe7060000.ethernet: Enabled extended descriptors
+[    2.248414] th1520-dwmac ffe7060000.ethernet: Ring mode enabled
+[    2.254407] th1520-dwmac ffe7060000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+[    2.266571] virtual_log_mem=0x000000007655c199, phy base=0x0x0000000033600000
+[    2.329307] mmc1: SDHCI controller on ffe7090000.mmc [ffe7090000.mmc] using ADMA 64-bit
+[    2.366639] pca953x 0-0018: supply vcc not found, using dummy regulator
+[    2.373661] pca953x 0-0018: using no AI
+[    2.381081] pca953x 1-0018: supply vcc not found, using dummy regulator
+[    2.388189] pca953x 1-0018: using no AI
+[    2.396099] pca953x 3-0018: supply vcc not found, using dummy regulator
+[    2.403079] pca953x 3-0018: using no AI
+[    2.409542] th1520-event soc:th1520-event: magicnum:0x5a5a5a5a mode:0x20
+[    2.416381] th1520-event soc:th1520-event: th1520-event driver init successfully
+[    2.423572] mmc1: new ultra high speed SDR104 SDXC card at address 0001
+[    2.424495] [th1520_wdt_probe,346] register power off callback
+[    2.431480] mmcblk1: mmc1:0001 EZSD1 58.2 GiB
+[    2.436365] succeed to register th1520 pmic watchdog
+[    2.439323] cpu cpu0: EM: OPP:1704000 is inefficient
+[    2.443606]  mmcblk1: p1
+[    2.445856] cpu cpu0: EM: OPP:1608000 is inefficient
+[    2.445871] cpu cpu0: EM: OPP:1404000 is inefficient
+[    2.448449] cpu cpu0: EM: OPP:1296000 is inefficient
+[    2.448463] cpu cpu0: EM: OPP:1200000 is inefficient
+[    2.448476] cpu cpu0: EM: OPP:1104000 is inefficient
+[    2.448487] cpu cpu0: EM: OPP:1000000 is inefficient
+[    2.448498] cpu cpu0: EM: OPP:900000 is inefficient
+[    2.448510] cpu cpu0: EM: OPP:702000 is inefficient
+[    2.448521] cpu cpu0: EM: OPP:600000 is inefficient
+[    2.448532] cpu cpu0: EM: OPP:500000 is inefficient
+[    2.448543] cpu cpu0: EM: OPP:400000 is inefficient
+[    2.448558] cpu cpu0: EM: Access to CPUFreq policy failed
+[    2.454837] cpu cpu0: EM: created perf domain
+[    2.460940] cpufreq: cpufreq_online: CPU0: Running at unlisted initial frequency: 750000 KHz, changing to: 800000 KHz
+[    2.474048] cpu cpu0: finish to register cpufreq driver
+[    2.482908] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    2.490749] th1520 rpmsg: Ready for cross core communication!
+[    2.496568] th1520 rpmsg: rproc_name = m4
+[    2.497719] virtio_rpmsg_bus virtio0: rpmsg host is online
+[    2.507409] virtual_log_mem=0x000000004d491efc, phy base=0x0x0000000033400000
+[    2.514731] th1520 rpmsg: driver is registered.
+[    2.519323] virtio_rpmsg_bus virtio0: creating channel rpmsg-virtual-char-channel-1 addr 0xee
+[    2.524023] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.537021] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.543191] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    2.550558] clk: Not disabling unused clocks
+[    2.554929] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    2.555971] ALSA device list:
+[    2.563586] cfg80211: failed to load regulatory.db
+[    2.566595]   #0: TH1520-Sound-Card
+[    2.575238] dw-apb-uart ffe7014000.serial: forbid DMA for kernel console
+[    2.593409] EXT4-fs (mmcblk0p4): mounted filesystem 96b30856-3c69-4a35-a28c-76fc2ef1b4a7 r/w with ordered data mode. Quota mode: disabled.
+[    2.605944] VFS: Mounted root (ext4 filesystem) on device 179:4.
+[    2.612720] devtmpfs: mounted
+[    2.615849] Freeing unused kernel image (initmem) memory: 552K
+[    2.621752] Kernel memory protection not selected by kernel config.
+[    2.628049] Run /sbin/init as init process
+[    2.632158]   with arguments:
+[    2.632164]     /sbin/init
+[    2.632168]   with environment:
+[    2.632172]     HOME=/
+[    2.632176]     TERM=linux
+[    2.632180]     eth=
+[    2.632183]     rootrwoptions=rw,noatime
+[    2.632187]     rootrwreset=yes
+[    2.632191]     selinux=0
+[    2.815550] systemd[1]: systemd v255-34.oe2403sp1 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA -SMACK +SECCOMP +GCRYPT +GNUTLS -OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE -TPM2 +BZIP2 +LZ4 +XZ +ZLIB -ZSTD -BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=legacy)
+[    2.848315] systemd[1]: Detected architecture riscv64.
+[    2.868755] systemd[1]: Hostname set to <openeuler-riscv64>.
+[    3.189386] systemd[1]: /usr/lib/systemd/system/dbus.socket:5: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+[    3.438634] systemd[1]: Queued start job for default target Graphical Interface.
+[    3.453595] systemd[1]: Created slice Slice /system/getty.
+[    3.476978] systemd[1]: Created slice Slice /system/modprobe.
+[    3.500923] systemd[1]: Created slice Slice /system/serial-getty.
+[    3.524951] systemd[1]: Created slice Slice /system/sshd-keygen.
+[    3.548496] systemd[1]: Created slice User and Session Slice.
+[    3.572375] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    3.596216] systemd[1]: Arbitrary Executable File Formats File System Automount Point was skipped because of an unmet condition check (ConditionPathExists=/proc/sys/fs/binfmt_misc).
+[    3.612780] systemd[1]: Reached target Slice Units.
+[    3.632619] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    3.660327] systemd[1]: Listening on LVM2 poll daemon socket.
+[    3.686455] systemd[1]: Listening on RPCbind Server Activation Socket.
+[    3.712125] systemd[1]: Reached target RPC Port Mapper.
+[    3.737881] systemd[1]: Listening on Process Core Dump Socket.
+[    3.760451] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    3.784676] systemd[1]: Listening on Journal Socket (/dev/log).
+[    3.808664] systemd[1]: Listening on Journal Socket.
+[    3.835819] systemd[1]: Listening on udev Control Socket.
+[    3.856607] systemd[1]: Listening on udev Kernel Socket.
+[    3.900169] systemd[1]: Mounting Huge Pages File System...
+[    3.922160] systemd[1]: Mounting POSIX Message Queue File System...
+[    3.946428] systemd[1]: Mounting Kernel Debug File System...
+[    3.970313] systemd[1]: Mounting Kernel Trace File System...
+[    3.992415] systemd[1]: Kernel Module supporting RPCSEC_GSS was skipped because of an unmet condition check (ConditionPathExists=/etc/krb5.keytab).
+[    4.006004] systemd[1]: Create List of Static Device Nodes was skipped because of an unmet condition check (ConditionFileNotEmpty=/lib/modules/6.6.72-00200-gd5d5c0772396/modules.devname).
+[    4.025328] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    4.054879] systemd[1]: Starting Load Kernel Module configfs...
+[    4.079641] systemd[1]: Starting Load Kernel Module drm...
+[    4.104669] systemd[1]: Starting Load Kernel Module fuse...
+[    4.125377] systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[    4.138350] systemd[1]: systemd-journald.service: (This warning is only shown for the first unit using IP firewalling.)
+[    4.151363] systemd[1]: Starting Journal Service...
+[    4.174001] systemd[1]: Load Kernel Modules was skipped because no trigger condition checks were met.
+[    4.186143] systemd[1]: Starting Generate network units from Kernel command line...
+[    4.214702] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    4.233577] systemd-journald[146]: Collecting audit messages is disabled.
+[    4.245072] systemd[1]: Starting Apply Kernel Variables...
+[    4.284599] systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+[    4.321164] systemd[1]: Starting Coldplug All udev Devices...
+[    4.350873] systemd[1]: Starting Virtual Console Setup...
+[    4.356110] I/O error, dev mmcblk1, sector 2056 op 0x0:(READ) flags 0x800 phys_seg 3 prio class 2
+[    4.371489] systemd[1]: Started Journal Service.
+[    4.548250] systemd-journald[146]: Received client request to flush runtime journal.
+[    4.612747] systemd-journald[146]: /var/log/journal/72a21a0336544017baff858bf2ad1b1d/system.journal: Realtime clock jumped backwards relative to last journal entry, rotating.
+[    4.629104] systemd-journald[146]: Rotating system journal.
+[    5.441357] th1520-dwmac ffe7060000.ethernet end1: renamed from eth1
+[    5.541167] th1520-dwmac ffe7070000.ethernet end0: renamed from eth0
+[    6.028918] EXT4-fs (mmcblk0p2): mounted filesystem 01561869-83af-499a-939b-b7d733dfda7f r/w with ordered data mode. Quota mode: disabled.
+[   11.152668] th1520-dwmac ffe7070000.ethernet end0: Register MEM_TYPE_PAGE_POOL RxQ-0
+[   11.267963] th1520-dwmac ffe7070000.ethernet end0: PHY [stmmac-0:01] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[   11.303918] dwmac1000: Master AXI performs fixed burst length
+[   11.315922] th1520-dwmac ffe7070000.ethernet end0: No Safety Features support found
+[   11.333176] th1520-dwmac ffe7070000.ethernet end0: IEEE 1588-2008 Advanced Timestamp supported
+[   11.352525] th1520-dwmac ffe7070000.ethernet end0: configuring for phy/rgmii-id link mode
+[   11.463613] th1520-dwmac ffe7060000.ethernet end1: Register MEM_TYPE_PAGE_POOL RxQ-0
+[   11.576101] th1520-dwmac ffe7060000.ethernet end1: PHY [stmmac-0:02] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[   11.603925] dwmac1000: Master AXI performs fixed burst length
+[   11.615867] th1520-dwmac ffe7060000.ethernet end1: No Safety Features support found
+[   11.631888] th1520-dwmac ffe7060000.ethernet end1: IEEE 1588-2008 Advanced Timestamp supported
+[   11.662582] th1520-dwmac ffe7060000.ethernet end1: configuring for phy/rgmii-id link mode
+[   15.813977] th1520-dwmac ffe7060000.ethernet end1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   33.921089] soc_dovdd18_scan: disabling
+[   33.925138] soc_dvdd12_scan: disabling
+[   33.929081] soc_avdd28_scan_en: disabling
