@@ -1,0 +1,7 @@
+[root@openeuler-riscv64 ~]# nmcli device wifi list
+IN-USE  BSSID              SSID                MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        88:6E:DD:F2:5A:F6  CMCC-5AF4           Infra  11    130 Mbit/s  100     ▂▄▆█  WPA1 WPA2 
+        1C:68:7E:6B:47:2A  ChinaNet-2.4G-472A  Infra  11    130 Mbit/s  62      ▂▄▆_  WPA1 WPA2 
+        10:47:E7:3F:76:19  1001                Infra  6     130 Mbit/s  49      ▂▄__  WPA1 WPA2 
+        54:A7:03:28:BC:D8  TP-LINK_BCD8        Infra  1     270 Mbit/s  44      ▂▄__  WPA1 WPA2 
+        10:24:AC:FF:FF:FF  HAN-304             Infra  11    54 Mbit/s   32      ▂▄__  WPA2
