@@ -1,0 +1,17 @@
+[  557.394747] usb 1-2.1: new high-speed USB device number 4 using xhci_hcd
+[  557.563947] usb 1-2.1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+[  557.580697] usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  557.595367] usb 1-2.1: Product: LIO-AN00P
+[  557.603435] usb 1-2.1: Manufacturer: HUAWEI
+[  557.611845] usb 1-2.1: SerialNumber: EDN0220113005286
+[  557.693634] usb-storage 1-2.1:1.1: USB Mass Storage device detected
+[  557.707699] scsi host5: usb-storage 1-2.1:1.1
+[  557.717199] usbcore: registered new interface driver usb-storage
+[  557.736107] usbcore: registered new interface driver uas
+[  558.731579] scsi 5:0:0:0: CD-ROM            Linux    File-CD Gadget   0510 PQ: 0 ANSI: 2
+[  558.769427] scsi 5:0:0:0: Attached scsi generic sg0 type 5
+[  558.801779] sr 5:0:0:0: Power-on or device reset occurred
+[  558.817711] sr 5:0:0:0: [sr0] scsi-1 drive
+[  558.826188] cdrom: Uniform CD-ROM driver Revision: 3.20
+[  558.841625] sr 5:0:0:0: Attached scsi CD-ROM sr0
+
